@@ -1,35 +1,50 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+### macOS ###
 .DS_Store
-*.pem
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
 
-# local env files
-.env*.local
+### Windows ###
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-# vercel
-.vercel
+### Node Stack ###
+node_modules/
+package-lock.json
 
-# typescript
-*.tsbuildinfo
+### WebStorm+all Patch ###
+.idea/
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
+
+### Project Excludes ###
+.env
+.next/
 next-env.d.ts
+out/
+public/sitemap.xml

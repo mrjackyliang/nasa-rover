@@ -1,6 +1,10 @@
 {
   "name": "nasa-rover",
-  "version": "0.1.0",
+  "displayName": "NASA Rover",
+  "version": "1.0.0",
+  "description": "A small application that allows you to browse Mars Rover photos from the NASA Public API",
+  "main": "",
+  "type": "commonjs",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,15 +12,62 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrjackyliang/nasa-rover.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/mrjackyliang"
+  },
+  "keywords": [
+    "nasa",
+    "rover",
+    "mars",
+    "react",
+    "nextjs"
+  ],
+  "author": "Jacky Liang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrjackyliang/nasa-rover/issues"
+  },
+  "files": [],
+  "homepage": "https://github.com/mrjackyliang/nasa-rover",
+  "engines": {
+    "node": "16"
+  },
   "dependencies": {
-    "@types/node": "18.16.3",
-    "@types/react": "18.2.0",
-    "@types/react-dom": "18.2.1",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.1",
+    "@emotion/react": "11.10.8",
+    "@emotion/styled": "11.10.8",
+    "@mui/icons-material": "5.11.16",
+    "@mui/material": "5.12.2",
+    "@mui/system": "5.12.1",
+    "@mui/x-date-pickers": "6.3.0",
+    "axios": "1.4.0",
+    "luxon": "3.3.0",
     "next": "13.3.1",
+    "next-themes": "0.2.1",
+    "numeral": "2.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@types/luxon": "3.3.0",
+    "@types/node": "18.16.3",
+    "@types/numeral": "2.0.2",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "@typescript-eslint/eslint-plugin": "5.59.1",
+    "@typescript-eslint/parser": "5.59.1",
+    "eslint": "8.39.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-next": "13.3.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
     "typescript": "5.0.4"
   }
 }
