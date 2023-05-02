@@ -128,6 +128,26 @@ export type ParseISODateToLuxonDate = unknown;
 export type ParseISODateToLuxonReturns = DateTime | undefined;
 
 /**
+ * Photo modal.
+ *
+ * @since 1.0.0
+ */
+export type PhotoModalPropsAlt = string;
+
+export type PhotoModalPropsImgSrc = string;
+
+export type PhotoModalPropsOnClose = () => void;
+
+export type PhotoModalPropsOpen = boolean;
+
+export type PhotoModalProps = {
+  alt?: PhotoModalPropsAlt;
+  imgSrc: PhotoModalPropsImgSrc;
+  onClose: PhotoModalPropsOnClose;
+  open: PhotoModalPropsOpen;
+};
+
+/**
  * Rover detail.
  *
  * @since 1.0.0
@@ -139,6 +159,12 @@ export type RoverDetailPropsEarthDate = string;
 export type RoverDetailProps = {
   rover: RoverDetailPropsRover;
   earthDate: RoverDetailPropsEarthDate;
+};
+
+export type RoverDetailModalState = boolean;
+
+export type RoverDetailModalStates = {
+  [id: string]: RoverDetailModalState;
 };
 
 export type RoverDetailRoverResponse = ApiNasaMarsPhotosRovers | null;

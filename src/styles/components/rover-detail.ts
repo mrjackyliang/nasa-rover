@@ -32,6 +32,7 @@ export function generateMuiStyles(theme: GenerateMuiStylesTheme, id: GenerateMui
         borderRadius: 5,
         borderWidth: 8,
         transition: 'all 250ms ease-in-out',
+        cursor: 'pointer',
       };
     case 'detail-grid-item-text':
       return {

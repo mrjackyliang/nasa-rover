@@ -9,6 +9,7 @@ import {
 import axios from 'axios';
 import NextLink from 'next/link';
 import React, { useEffect, useState } from 'react';
+import LazyLoad from 'react-lazy-load';
 
 import { ApiError } from '@/components/api-error';
 import { ApiLoading } from '@/components/api-loading';
@@ -59,37 +60,39 @@ export function RoverListing() {
 
               return (
                 <Grid key={rover.id} item xs={12} sm={6} md={3}>
-                  <Link
-                    component={NextLink}
-                    href={`/detail/${roverName.toLowerCase()}/${roverMaxDate}?minDate=${roverLandingDate}&maxDate=${roverMaxDate}`}
-                    sx={generateMuiStyles(muiTheme, 'listing-grid-link')}
-                  >
-                    <Paper sx={generateMuiStyles(muiTheme, 'listing-grid-link-paper')}>
-                      <Typography variant="h4">
-                        {roverName}
-                      </Typography>
-                      <Typography variant="body2">
-                        <strong>Launch Date:</strong>
-                        {' '}
-                        {convertISOToPrettyDate(roverLaunchDate)}
-                      </Typography>
-                      <Typography variant="body2">
-                        <strong>Landing Date:</strong>
-                        {' '}
-                        {convertISOToPrettyDate(roverLandingDate)}
-                      </Typography>
-                      <Typography variant="body2">
-                        <strong>Total Photos:</strong>
-                        {' '}
-                        {formatNumber(roverTotalPhotos)}
-                      </Typography>
-                      <Typography variant="body2">
-                        <strong>Cameras Available:</strong>
-                        {' '}
-                        {cameras.length}
-                      </Typography>
-                    </Paper>
-                  </Link>
+                  <LazyLoad>
+                    <Link
+                      component={NextLink}
+                      href={`/detail/${roverName.toLowerCase()}/${roverMaxDate}?minDate=${roverLandingDate}&maxDate=${roverMaxDate}`}
+                      sx={generateMuiStyles(muiTheme, 'listing-grid-link')}
+                    >
+                      <Paper sx={generateMuiStyles(muiTheme, 'listing-grid-link-paper')}>
+                        <Typography variant="h4">
+                          {roverName}
+                        </Typography>
+                        <Typography variant="body2">
+                          <strong>Launch Date:</strong>
+                          {' '}
+                          {convertISOToPrettyDate(roverLaunchDate)}
+                        </Typography>
+                        <Typography variant="body2">
+                          <strong>Landing Date:</strong>
+                          {' '}
+                          {convertISOToPrettyDate(roverLandingDate)}
+                        </Typography>
+                        <Typography variant="body2">
+                          <strong>Total Photos:</strong>
+                          {' '}
+                          {formatNumber(roverTotalPhotos)}
+                        </Typography>
+                        <Typography variant="body2">
+                          <strong>Cameras Available:</strong>
+                          {' '}
+                          {cameras.length}
+                        </Typography>
+                      </Paper>
+                    </Link>
+                  </LazyLoad>
                 </Grid>
               );
             })
