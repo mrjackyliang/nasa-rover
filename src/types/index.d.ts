@@ -1,4 +1,4 @@
-import type { SxProps, Theme } from '@mui/system';
+import type { SxProps, Theme } from '@mui/material';
 import type { DateTime } from 'luxon';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import type { AppProps as NextAppProps } from 'next/app';

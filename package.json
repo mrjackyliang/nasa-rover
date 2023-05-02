@@ -42,7 +42,6 @@
     "@emotion/styled": "11.10.8",
     "@mui/icons-material": "5.11.16",
     "@mui/material": "5.12.2",
-    "@mui/system": "5.12.1",
     "@mui/x-date-pickers": "6.3.0",
     "axios": "1.4.0",
     "luxon": "3.3.0",
