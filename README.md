@@ -1,5 +1,12 @@
 NASA Rover
 ===========
+
+[![GitHub Releases](https://img.shields.io/github/v/release/mrjackyliang/nasa-rover?style=flat-square&logo=github&logoColor=%23ffffff&color=%23b25da6)](https://github.com/mrjackyliang/nasa-rover/releases)
+[![GitHub Top Languages](https://img.shields.io/github/languages/top/mrjackyliang/nasa-rover?style=flat-square&logo=typescript&logoColor=%23ffffff&color=%236688c3)](https://github.com/mrjackyliang/nasa-rover)
+[![GitHub License](https://img.shields.io/github/license/mrjackyliang/nasa-rover?style=flat-square&logo=googledocs&logoColor=%23ffffff&color=%2348a56a)](https://github.com/mrjackyliang/nasa-rover/blob/main/LICENSE)
+[![Become a GitHub Sponsor](https://img.shields.io/badge/github-sponsor-gray?style=flat-square&logo=githubsponsors&logoColor=%23ffffff&color=%23eaaf41)](https://github.com/sponsors/mrjackyliang)
+[![Donate via PayPal](https://img.shields.io/badge/paypal-donate-gray?style=flat-square&logo=paypal&logoColor=%23ffffff&color=%23ce4a4a)](https://liang.nyc/paypal)
+
 This is a coding challenge for creating a small web application that allows a user to browse the Mars Rover photos from NASA's public API.
 
 ## Getting Started

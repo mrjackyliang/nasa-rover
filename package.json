@@ -16,10 +16,16 @@
     "type": "git",
     "url": "git://github.com/mrjackyliang/nasa-rover.git"
   },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/mrjackyliang"
-  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/mrjackyliang"
+    },
+    {
+      "type": "custom",
+      "url": "https://liang.nyc/paypal"
+    }
+  ],
   "keywords": [
     "nasa",
     "rover",
